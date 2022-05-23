@@ -4,13 +4,10 @@ import datetime
 from twilio.rest import Client
 import snowflake.connector
 
-from dotenv import load_dotenv
 
-load_dotenv()
-
-ACCOUNT_SID = os.environ.get('ACCOUNT_SID')
-AUTH_TOKEN = os.environ.get('AUTH_TOKEN')
-FROM = os.environ.get('FROM')
+ACCOUNT_SID = 'AC5ce8925b35bf141b043e368fcd90cf7a'
+AUTH_TOKEN = 'bcecb8bbaf00b6ffd7cb5d77f1ee5fb6'
+FROM = 'whatsapp:+14155238886'
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 

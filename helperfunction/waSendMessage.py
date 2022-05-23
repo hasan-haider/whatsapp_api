@@ -29,9 +29,9 @@ def sendMessage(senderId, message):
 
 def addFeedback(senderId, message, curr_q):
     print(message, 'addfeedbackmsg')
-    # messages = message.split('\n')
+    questions=['Start?','Reply to start feedback:\n\nPlease respond answers in range 1 to 5']
     # print(messages,'addfeedback')
-    if curr_q != 'Reply to start feedback:\n\nPlease respond answers in range 1 to 5' or curr_q != 'Start?':
+    if curr_q not in questions:
         cs = ctx.cursor()
         try:
             q = curr_q

@@ -6,7 +6,7 @@ import snowflake.connector
 
 
 ACCOUNT_SID = 'AC5ce8925b35bf141b043e368fcd90cf7a'
-AUTH_TOKEN = 'bcecb8bbaf00b6ffd7cb5d77f1ee5fb6'
+AUTH_TOKEN = 'c4e0eaceee7c4f6312b532652f268aad'
 FROM = 'whatsapp:+14155238886'
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)

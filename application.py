@@ -3,10 +3,10 @@ import os
 
 import flask
 from flask import request
-from config import Config
+#from config import Config
 
 application = flask.Flask(__name__)
-application.config.from_object(Config)
+#application.config.from_object(Config)
 
 questions=['Start?','Reply to start feedback:\n\nPlease respond answers in range 1 to 5']
 with open('questions.csv','r') as file:
